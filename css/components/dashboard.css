@@ -1,0 +1,31 @@
+.navbar ul li a:hover {
+  color: #b1040e !important;
+}
+.navbar-brand {
+  color: #9a9ab4;
+}
+.sidebar-wrapper ul li {
+  width: 100%;
+}
+.sidebar-wrapper ul li a {
+  padding: 10px;
+}
+.icon-bar {
+  padding-top: 3px;
+  margin-top: 5px !important;
+  width: 100% !important;
+}
+.breadcrumb {
+  background: transparent;
+}
+.topdd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 728px) {
+  .breadcrumb {
+    display: none;
+  }
+}

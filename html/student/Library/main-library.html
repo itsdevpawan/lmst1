@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Library</title>
+
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/library/main-library.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- sidebar -->
+      <div
+        class="sidebar"
+        data-color="red"
+        data-image="assets/img/sidebar-5.jpg"
+      >
+        <!-- sidebar links -->
+        <div class="sidebar-wrapper">
+          <div class="logo">
+            <a href="#" class="simple-text"> IndianEDU </a>
+          </div>
+
+          <ul class="nav">
+            <li >
+              <a href="#">
+                <div class="form-group">
+                  <label for="sel1">Class-room</label>
+                  <select
+                    onchange="location = this.options[this.selectedIndex].value;"
+                    class="form-control"
+                    id="sel1"
+                  >
+                    <option>Select Class</option>
+                    <option value="/html/student/classroom/classroom.html">
+                      English
+                    </option>
+                    <option value="/html/student/classroom/classroom.html">
+                      Hindi
+                    </option>
+                    <option value="/html/student/classroom/classroom.html">
+                      Maths
+                    </option>
+                    <option value="/html/student/classroom/classroom.html">
+                      Physics
+                    </option>
+                  </select>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/html/student/student-dashboard.html">
+                <i class="pe-7s-graph"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+
+            <li >
+              <a href="/html/student/student-attend-exam.html">
+                <i class="pe-7s-note"></i>
+                <p>Attend Exam</p>
+              </a>
+            </li>
+            <li>
+              <a href="/html/student/student-my-mentors.html">
+                <i class="pe-7s-user"></i>
+                <p>My Mentors</p>
+              </a>
+            </li>
+            <li>
+              <a href="/html/student/Student-subject-topics.html">
+                <i class="pe-7s-bookmarks"></i>
+                <p>View Topics</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="pe-7s-note2"></i>
+                <p>view results</p>
+              </a>
+            </li>
+            <li></li>
+            <li class="active">
+              <a href="/html/student/Library/main-library.html">
+                <i class="pe-7s-bookmarks"></i>
+                <p>Library</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="pe-7s-mail"></i>
+                <p>Contact Admin</p>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="/html/help.html">
+                <i class="pe-7s-help1"></i>
+                <p>Help</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-panel">
+        <!-- main navbar -->
+        <nav class="navbar navbar-expand-lg navbar-default navbar-fixed">
+          <div class="container-fluid">
+            <div class="d-flex">
+              <a class="navbar-brand" href="#">Student Dashboard</a>
+              <button
+                class="navbar-toggler navbar-toggle bg-danger"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon">
+                  <i class="icon-bar"></i>
+                  <i class="icon-bar"></i>
+                  <i class="icon-bar"></i>
+                </span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="ml-lg-4">
+                  <a href="">
+                    <p>About</p>
+                  </a>
+                </li>
+
+                <li class="ml-lg-4">
+                  <a href="#">
+                    <p>Notification</p>
+                  </a>
+                </li>
+                <li class="ml-lg-4">
+                  <a href="#">
+                    <p>Achivements of Institute</p>
+                  </a>
+                </li>
+                <li class="ml-lg-4">
+                  <a href="#">
+                    <p>Complain</p>
+                  </a>
+                </li>
+                <li class="ml-lg-4">
+                  <a href="/index.html">
+                    <p>Log Out</p>
+                  </a>
+                </li>
+                <li class="separator hidden-lg"></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- man page content -->
+        <div class="content">
+          <div class="container-fluid">
+            <!-- breadcrumb and classroom code -->
+            <div class="topdd">
+              <div class="navbread">
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                     Student
+                    </li>
+                    <li class="breadcrumb-item">Dashborad</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <!-- next row for containing data as container -->
+            <div class="row">
+              <!-- container collection items -->
+              <div class="col-md-12 sub-container">
+                <div class="card">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link active"
+                        id="pills-home-tab"
+                        data-toggle="pill"
+                        href="#pills-home"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                        >E-book</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="pills-profile-tab"
+                        data-toggle="pill"
+                        href="#pills-profile"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                        >Audio</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-toggle="pill"
+                        href="#pills-contact"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                        >Video</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- container one -->
+              <div class="col-md-12">
+                <!-- containing all the data according to the option selected -->
+                <div class="card">
+                  <div class="content">
+                    <div class="tab-content" id="pills-tabContent">
+                      <!-- e-books -->
+                      <div
+                        class="tab-pane fade show active"
+                        id="pills-home"
+                        role="tabpanel"
+                        aria-labelledby="pills-home-tab"
+                      >
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="">
+                            <!-- header -->
+                          <h4 class="title font-weight-bold">E-books</h4>
+                          <p class="category">List of all e-books</p>
+                          </div>
+
+                          <div class="">
+                            <!-- searchbar -->
+                          <form class="form-inline" action="/action_page.php">
+                            <input
+                              class="form-control mr-sm-2"
+                              type="text"
+                              placeholder="Search"
+                            />
+                            <button class="btn btn-success" type="submit">
+                              Search
+                            </button>
+                          </div>
+                          </form>
+                        </div>
+                        <!-- text book list -->
+                        <!-- book added -->
+                        <div class="card" style="padding: 30px">
+                          <div class="row">
+                            <!-- img -->
+                            <div class="col-md-3">
+                              <a href="#"
+                                ><img
+                                  class="ml-lg-5"
+                                  type="button"
+                                  data-toggle="modal"
+                                  data-target="#exampleModal4"
+                                  src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <!-- book description -->
+                            <div class="col-md-8 bdata">
+                              <a
+                                href="#"
+                                type="button"
+                                data-toggle="modal"
+                                data-target="#exampleModalw"
+                                ><h4
+                                  style="margin-bottom: -5px; color: black"
+                                  class="font-weight-bold"
+                                >
+                                  English Grammer II
+                                </h4></a
+                              >
+                              <!-- Modal -->
+                              <div
+                                class="modal fade bd-example-modal-lg"
+                                id="exampleModalw"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-lg"
+                                  role="dialog"
+                                  aria-labelledby="myLargeModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h3
+                                        class="modal-title font-weight-bold"
+                                        id="exampleModalLabel"
+                                      >
+                                        English Grammer II
+                                      </h3>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body d-lg-flex">
+                                      <!-- popup modal image -->
+                                      <img
+                                        width="100"
+                                        height="300"
+                                        class="col-md-4 col-sm-6"
+                                        src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                        alt=""
+                                      />
+                                      <!-- popup modal description -->
+                                      <p class="col-md-8 col-sm-6">
+                                        Donec id elit non mi porta gravida at
+                                        eget metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer bbuttons">
+                                      <button
+                                        type="button"
+                                        class="btn btn-danger"
+                                      >
+                                        Download
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                      >
+                                        Add to wishlist
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <small style="color: gray">By ABC ltd.</small>
+                              <p style="font-size: 1.5rem; margin-bottom: -5px">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                              </p>
+                              <small>Paperback</small>
+                              <p style="color: gray; margin-bottom: -5px">
+                                Description
+                              </p>
+                              <small
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Eius maxime, facere quibusdam
+                                quo hic dolores, modi ipsum soluta ipsa ullam
+                                consequuntur temporibus nesciunt mollitia
+                                dolorum fugiat deserunt odio debitis
+                                itaque!</small
+                              >
+                              <div class="ebuttons">
+                                <button>Download</button>
+                                <button>Add to wishlist</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- book added -->
+                        <div class="card" style="padding: 30px">
+                          <div class="row">
+                            <!-- img -->
+                            <div class="col-md-3">
+                              <a href="#"
+                                ><img
+                                  class="ml-lg-5"
+                                  type="button"
+                                  data-toggle="modal"
+                                  data-target="#exampleModal4"
+                                  src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <!-- book description -->
+                            <div class="col-md-8 bdata">
+                              <a
+                                href="#"
+                                type="button"
+                                data-toggle="modal"
+                                data-target="#exampleModalq"
+                                ><h4
+                                  style="margin-bottom: -5px; color: black"
+                                  class="font-weight-bold"
+                                >
+                                  English Grammer II
+                                </h4></a
+                              >
+                              <!-- Modal -->
+                              <div
+                                class="modal fade bd-example-modal-lg"
+                                id="exampleModalq"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-lg"
+                                  role="dialog"
+                                  aria-labelledby="myLargeModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h3
+                                        class="modal-title font-weight-bold"
+                                        id="exampleModalLabel"
+                                      >
+                                        English Grammer II
+                                      </h3>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body d-lg-flex">
+                                      <!-- popup modal image -->
+                                      <img
+                                        width="100"
+                                        height="300"
+                                        class="col-md-4 col-sm-6"
+                                        src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                        alt=""
+                                      />
+                                      <!-- popup modal description -->
+                                      <p class="col-md-8 col-sm-6">
+                                        Donec id elit non mi porta gravida at
+                                        eget metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer bbuttons">
+                                      <button
+                                        type="button"
+                                        class="btn btn-danger"
+                                      >
+                                        Download
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                      >
+                                        Add to wishlist
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <small style="color: gray">By ABC ltd.</small>
+                              <p style="font-size: 1.5rem; margin-bottom: -5px">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                              </p>
+                              <small>Paperback</small>
+                              <p style="color: gray; margin-bottom: -5px">
+                                Description
+                              </p>
+                              <small
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Eius maxime, facere quibusdam
+                                quo hic dolores, modi ipsum soluta ipsa ullam
+                                consequuntur temporibus nesciunt mollitia
+                                dolorum fugiat deserunt odio debitis
+                                itaque!</small
+                              >
+                              <div class="ebuttons">
+                                <button>Download</button>
+                                <button>Add to wishlist</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- book added -->
+                        <div class="card" style="padding: 30px">
+                          <div class="row">
+                            <!-- img -->
+                            <div class="col-md-3">
+                              <a href="#"
+                                ><img
+                                  class="ml-lg-5"
+                                  type="button"
+                                  data-toggle="modal"
+                                  data-target="#exampleModal4"
+                                  src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <!-- book description -->
+                            <div class="col-md-8 bdata">
+                              <a
+                                href="#"
+                                type="button"
+                                data-toggle="modal"
+                                data-target="#exampleModal4"
+                                ><h4
+                                  style="margin-bottom: -5px; color: black"
+                                  class="font-weight-bold"
+                                >
+                                  English Grammer II
+                                </h4></a
+                              >
+                              <!-- Modal -->
+                              <div
+                                class="modal fade bd-example-modal-lg"
+                                id="exampleModal4"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-lg"
+                                  role="dialog"
+                                  aria-labelledby="myLargeModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h3
+                                        class="modal-title font-weight-bold"
+                                        id="exampleModalLabel"
+                                      >
+                                        English Grammer II
+                                      </h3>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body d-lg-flex">
+                                      <!-- popup modal image -->
+                                      <img
+                                        width="100"
+                                        height="300"
+                                        class="col-md-4 col-sm-6"
+                                        src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                        alt=""
+                                      />
+                                      <!-- popup modal description -->
+                                      <p class="col-md-8 col-sm-6">
+                                        Donec id elit non mi porta gravida at
+                                        eget metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.Donec
+                                        id elit non mi porta gravida at eget
+                                        metus. Maecenas sed diam eget risus
+                                        varius blandit.Donec id elit non mi
+                                        porta gravida at eget metus. Maecenas
+                                        sed diam eget risus varius blandit.
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer bbuttons">
+                                      <button
+                                        type="button"
+                                        class="btn btn-danger"
+                                      >
+                                        Download
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                      >
+                                        Add to wishlist
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <small style="color: gray">By ABC ltd.</small>
+                              <p style="font-size: 1.5rem; margin-bottom: -5px">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                              </p>
+                              <small>Paperback</small>
+                              <p style="color: gray; margin-bottom: -5px">
+                                Description
+                              </p>
+                              <small
+                                >Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Eius maxime, facere quibusdam
+                                quo hic dolores, modi ipsum soluta ipsa ullam
+                                consequuntur temporibus nesciunt mollitia
+                                dolorum fugiat deserunt odio debitis
+                                itaque!</small
+                              >
+                              <div class="ebuttons">
+                                <button>Download</button>
+                                <button>Add to wishlist</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- audio books -->
+                      <div
+                        class="tab-pane fade"
+                        id="pills-profile"
+                        role="tabpanel"
+                        aria-labelledby="pills-profile-tab"
+                      >
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="">
+                            <!-- header -->
+                          <h4 class="title font-weight-bold">Audio</h4>
+                          <p class="category">List of all audio</p></div>
+                          <div class="">
+                            <!-- searchbar -->
+                          <form class="form-inline" action="/action_page.php">
+                            <input
+                              class="form-control mr-sm-2"
+                              type="text"
+                              
+                              placeholder="Search"
+                            />
+                            <button class="btn btn-success" type="submit">
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                        <!-- audio-book added -->
+                        <div class="card pl-lg-5 pt-lg-4 pb-lg-4">
+                          <div class="row">
+                            <div class="aud-img col-md-2">
+                              <img
+                                src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="aud-data col-md-8">
+                              <h4 class="mb-8less font-weight-bold">
+                                English Grammer II
+                              </h4>
+                              <small class="mb-2">By ABC ltd.</small>
+                              <small>Audio-book</small>
+                              <p class="mb-8less">Description</p>
+                              <small
+                                >Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore aliquam commodi eum?
+                                Nulla consequuntur veniam officiis unde quam non
+                                dolore distinctio quos quas tempora neque
+                                exercitationem laudantium, architecto impedit
+                                explicabo?</small
+                              >
+
+                              <div class="container-audio">
+                                <audio controls loop>
+                                  <source
+                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
+                                    type="audio/ogg"
+                                  />
+                                  Your browser dose not Support the audio Tag
+                                </audio>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- audio-book added -->
+                        <div class="card pl-lg-5 pt-lg-4 pb-lg-4">
+                          <div class="row">
+                            <div class="aud-img col-md-2">
+                              <img
+                                src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="aud-data col-md-8">
+                              <h4 class="mb-8less font-weight-bold">
+                                Hindi Grammer II
+                              </h4>
+                              <small class="mb-2">By ABC ltd.</small>
+                              <small>Audio-book</small>
+                              <p class="mb-8less">Description</p>
+                              <small
+                                >Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore aliquam commodi eum?
+                                Nulla consequuntur veniam officiis unde quam non
+                                dolore distinctio quos quas tempora neque
+                                exercitationem laudantium, architecto impedit
+                                explicabo?</small
+                              >
+
+                              <div class="container-audio">
+                                <audio controls loop>
+                                  <source
+                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
+                                    type="audio/ogg"
+                                  />
+                                  Your browser dose not Support the audio Tag
+                                </audio>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- audio-book added -->
+                        <div class="card pl-lg-5 pt-lg-4 pb-lg-4">
+                          <div class="row">
+                            <div class="aud-img col-md-2">
+                              <img
+                                src="https://m.media-amazon.com/images/I/81Nj00JVy6L._AC_UY218_.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="aud-data col-md-8">
+                              <h4 class="mb-8less font-weight-bold">
+                                Physics
+                              </h4>
+                              <small class="mb-2">By ABC ltd.</small>
+                              <small>Audio-book</small>
+                              <p class="mb-8less">Description</p>
+                              <small
+                                >Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore aliquam commodi eum?
+                                Nulla consequuntur veniam officiis unde quam non
+                                dolore distinctio quos quas tempora neque
+                                exercitationem laudantium, architecto impedit
+                                explicabo?</small
+                              >
+
+                              <div class="container-audio">
+                                <audio controls loop>
+                                  <source
+                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
+                                    type="audio/ogg"
+                                  />
+                                  Your browser dose not Support the audio Tag
+                                </audio>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- video books-->
+                      <div
+                        class="tab-pane fade"
+                        id="pills-contact"
+                        role="tabpanel"
+                        aria-labelledby="pills-contact-tab"
+                      >
+                        <div class="d-flex justify-content-between align-content-center">
+                          <div class="">
+                            <!-- header -->
+                          <h4 class="title font-weight-bold">Videos</h4>
+                          <p class="category">List of all videos</p>
+                          </div>
+                          <div class="d-flex align-content-center">
+                            <!-- searchbar -->
+                          <form class="form-inline" action="/action_page.php">
+                            <input
+                              class="form-control mr-sm-2"
+                              type="text"
+                              placeholder="Search"
+                            />
+                            <button class="btn btn-success" type="submit">
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                        <!-- all video cards -->
+                        <div class="d-lg-flex d-md-flex flex-wrap">
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title font-weight-bold text-dark mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title text-dark font-weight-bold mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title font-weight-bold text-dark mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title text-dark font-weight-bold mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title font-weight-bold text-dark mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title text-dark font-weight-bold mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title font-weight-bold text-dark mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                          <!-- video card -->
+                          <div
+                            class="card mt-lg-3 ml-lg-1 vdcd"
+                            style="width: 18rem"
+                          >
+                            <video
+                              src="https://www.youtube.com/watch?v=A9tG-i6P3rE"
+                              controls
+                            ></video>
+                            <div class="card-body">
+                              <a
+                                href="/html/student/Library/library-video.html"
+                                target="_blank"
+                                ><h5
+                                  class="card-title text-dark font-weight-bold mb-8less"
+                                >
+                                  English Grammer II
+                                </h5></a
+                              >
+                              <small class="text-muted">By Alice Doe</small>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptate quo itaque dolor
+                                consequatur aliquam perspiciatis
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <nav class="pull-left">
+              <ul>
+                <li>
+                  <a href="#"> Home </a>
+                </li>
+                <li>
+                  <a href="#"> About </a>
+                </li>
+                <li>
+                  <a href="#"> Privacy Policy </a>
+                </li>
+                <li>
+                  <a href="#"> Terms & Conditions </a>
+                </li>
+              </ul>
+            </nav>
+            <p class="copyright pull-right">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              <a href="/index.html">IndianEDU</a>, made with love
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <!--   Core JS Files   -->
+  <script src="/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/js/bootstrap-notify.js" type="text/javascript"></script>
+  <script
+    src="/js/light-bootstrap-dashboard.js"
+    type="text/javascript"
+  ></script>
+  <script src="main.js"></script>
+</html>

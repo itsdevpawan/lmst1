@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS Project</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/students/student-login.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="/index.html">
+          <img
+            src="https://img2.pngio.com/edu-png-6-png-image-edu-png-250_250.png"
+            width="50"
+            height="50"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          <h2>IndianEDU</h2>
+        </a>
+      </nav>
+    </header>
+
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Students</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Loign</li>
+      </ol>
+    </nav>
+
+    <!-- form section -->
+    <h2 class="form-title">Student Login Portal</h2>
+    <div class="login-form">
+      <div class="card">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-check tnc">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+              required
+            />
+            <label  class="form-check-label " for="exampleCheck1"></label>
+              By clicking this you agree with the
+              <a class="tnl" href="#">Privacy Policy</a> and the
+              <a class="tnl" href="#">Term & Conditions</a>
+            </label>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- convert this ancher tag to button -->
+              <!-- <button type="submit" class="btn">Login</button> -->
+              <a type="submit" href="/html/student/student-dashboard.html" class="btn btn-danger text-light">Login</a>
+              <a class="ftg-link" href="#">Forgot Password?</a>
+          </div>
+        </form>
+        <a class="mt-4 text-center ftg-link" href="#">Alreday have an account?</a>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="container-fluid bg-grey py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="logo-part">
+                  <h2>
+                    <img
+                      src="https://img2.pngio.com/edu-png-6-png-image-edu-png-250_250.png"
+                      class="w-50 logo-footer"
+                    />IndianEDU
+                  </h2>
+                  <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                  <p>lorem ipsum dolor sit amet, consectetur adipiscing el</p>
+                </div>
+              </div>
+              <div class="col-md-6 px-4">
+                <h6>About University</h6>
+                <p>
+                  lorem ipsum d sit am et dolor sit amet, consect et dolor sit
+                  amet al
+                </p>
+                <a href="#" class="btn-footer"> More Info </a><br />
+                <a href="#" class="btn-footer"> Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6 px-4">
+                <h6>Useful links</h6>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="#"> Home</a></li>
+                      <li><a href="#"> About</a></li>
+                      <li><a href="#"> Teachers login</a></li>
+                      <li><a href="#"> Students login</a></li>
+                      <li><a href="#"> Admin login</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 px-4">
+                    <ul>
+                      <li><a href="#"> Notifications</a></li>
+                      <li><a href="#"> Achivements</a></li>
+                      <li><a href="#"> FAQs</a></li>
+                      <li><a href="#"> Gallery</a></li>
+                      <li><a href="#"> Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h6>Newsletter</h6>
+                <div class="social">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <form class="form-footer my-3">
+                  <input
+                    type="text"
+                    placeholder="search here...."
+                    name="search"
+                  />
+                  <input type="button" value="Go" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- js files -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js//bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

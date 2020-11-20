@@ -1,0 +1,147 @@
+.navbar ul li a:hover {
+  color: #b1040e !important;
+}
+.navbar-brand {
+  color: #9a9ab4;
+}
+.sidebar-wrapper ul li {
+  width: 100%;
+}
+.sidebar-wrapper ul li a {
+  padding: 10px;
+}
+.icon-bar {
+  padding-top: 3px;
+  margin-top: 5px !important;
+  width: 100% !important;
+}
+.breadcrumb {
+  background: transparent;
+}
+.topdd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.scroll {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-backdrop.show {
+  opacity: 0;
+  z-index: -999;
+}
+.modal-content .bbuttons button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  background: var(--red);
+  cursor: pointer;
+}
+.topics a {
+  color: black;
+}
+.topics a:hover {
+  color: var(--red);
+}
+.assigment li {
+  cursor: pointer;
+}
+.assigment li:hover {
+  background: #f7f7f8;
+  transition: 0.5s;
+}
+.asgbtndk {
+  background: var(--dark) !important;
+  color: white;
+}
+.ddownloads .card {
+  padding: 15px;
+  text-align: center;
+  background: var(--red);
+}
+.ddownloads .card a {
+  color: white;
+}
+.askdbt input {
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+.askdbt textarea {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  padding: 5px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.askdbt button {
+  background: var(--red) !important;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 20%;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.bbuttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+}
+.bbuttons button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 10%;
+}
+.bbuttons button:first-child {
+  background: var(--red);
+}
+.bbuttons button:last-child {
+  background: var(--dark);
+}
+.listques ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.listques ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+.listques ul li a {
+  color: black;
+}
+.listques ul li a:hover {
+  color: #b1040e;
+}
+@media only screen and (max-width: 728px) {
+  .breadcrumb {
+    display: none;
+  }
+}

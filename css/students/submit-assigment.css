@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+/* globle classes */
+:root {
+  --dark: #292929;
+  --red: #b1040e;
+}
+
+/* footer section */
+.bg-grey {
+  background: var(--dark);
+}
+.logo-footer {
+  margin-bottom: 40px;
+}
+footer {
+  color: grey;
+  margin-top: 50px;
+}
+footer h2 {
+  font-family: "Roboto Condensed";
+}
+footer p,
+a {
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+footer h6 {
+  margin-bottom: 40px;
+  position: relative;
+}
+footer h6:after {
+  position: absolute;
+  content: "";
+  background: grey;
+  width: 12%;
+  height: 1px;
+  left: 0;
+  bottom: -20px;
+}
+.btn-footer {
+  color: grey;
+
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 43px;
+  font-size: 13px;
+  padding: 7px 30px;
+  line-height: 47px;
+}
+.btn-footer:hover {
+  text-decoration: none;
+}
+.form-footer input[type="text"] {
+  border: none;
+  border-radius: 16px 0 0 16px;
+  outline: none;
+  padding-left: 10px;
+}
+::placeholder {
+  font-size: 10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+.form-footer input[type="button"] {
+  border: none;
+  background: #232323;
+  margin-left: -5px;
+  color: #fff;
+  outline: none;
+  border-radius: 0 16px 16px 0;
+  padding: 2px 12px;
+}
+.social .fa {
+  color: grey;
+  font-size: 22px;
+  padding: 10px 15px;
+  background: #3c3c3c;
+}
+footer ul li {
+  list-style: none;
+  display: block;
+}
+footer ul {
+  padding-left: 0;
+}
+.logo-part img {
+  width: 40px !important;
+  margin-top: 30px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: grey;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--red) !important;
+}
+.logo-part {
+  border-right: 1px solid grey;
+  height: 100%;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+.card {
+  width: 480px !important;
+  padding: 50px;
+  margin: auto;
+  border: 1px solid var(--red);
+}
+.card p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card p span {
+  color: rgb(92, 92, 92);
+  margin-left: 5px;
+}
+
+.card button {
+  margin-top: 20px;
+  cursor: pointer;
+  margin: auto;
+  background: var(--red);
+  color: white;
+  margin-top: 20px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  width: 30%;
+}

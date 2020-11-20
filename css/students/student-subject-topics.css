@@ -1,0 +1,130 @@
+:root {
+  --dark: #292929;
+  --red: #e3535b;
+  --redbtn: #da2d36;
+}
+/* dashboard structure */
+.navbar ul li a:hover {
+  color: var(--red) !important;
+}
+.navbar-brand {
+  color: #9a9ab4;
+}
+.sidebar-wrapper ul li {
+  width: 100%;
+}
+.sidebar-wrapper ul li a {
+  padding: 10px;
+}
+.icon-bar {
+  padding-top: 3px;
+  margin-top: 5px !important;
+  width: 100% !important;
+}
+.breadcrumb {
+  background: transparent;
+}
+.topdd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* topics  */
+.sub-container ul li a {
+  color: black;
+  margin-top: 15px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--red);
+}
+.sub-container ul {
+  margin-left: 15px;
+}
+.topics h5 {
+  font-size: 1.5rem !important;
+}
+.topics button {
+  color: white;
+  background: var(--redbtn);
+  border: none;
+}
+.topics button:hover {
+  background: rgb(202, 0, 0);
+  color: white;
+}
+@media only screen and (max-width: 728px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+/* model popup */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  transition: 1s;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.modal-content video {
+  width: 100%;
+  max-height: 500px;
+  outline: none;
+  background: #000;
+}
+.modal-content .bbuttons button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-content .bbuttons button:first-child {
+  color: white;
+  background: var(--redbtn);
+}
+.modal-content .bbuttons button:last-child {
+  color: white;
+  background: var(--dark);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--redbtn);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+  z-index: -999;
+}
